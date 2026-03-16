@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 32 22% 89%;
+    --foreground: 18 23% 20%;
+    --card: 30 24% 92%;
+    --card-foreground: 18 23% 20%;
+    --popover: 30 24% 92%;
+    --popover-foreground: 18 23% 20%;
+    --primary: 319 45% 24%;
+    --primary-foreground: 30 25% 95%;
+    --secondary: 22 37% 22%;
+    --secondary-foreground: 30 33% 92%;
+    --muted: 25 10% 38%;
+    --muted-foreground: 25 10% 38%;
+    --accent: 319 45% 30%;
+    --accent-foreground: 30 24% 95%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 25 16% 72%;
+    --input: 25 16% 72%;
+    --ring: 319 45% 24%;
+    --radius: 0;
+
+    --surface: 32 21% 89%;
+    --warm-white: 30 25% 94%;
+    --dark-brown: 24 36% 21%;
+    --medium-brown: 22 34% 28%;
+
+    --sidebar-background: 30 24% 87%;
+    --sidebar-foreground: 18 7% 16%;
+    --sidebar-primary: 340 37% 26%;
+    --sidebar-primary-foreground: 30 24% 95%;
+    --sidebar-accent: 28 33% 90%;
+    --sidebar-accent-foreground: 18 7% 16%;
+    --sidebar-border: 27 18% 80%;
+    --sidebar-ring: 340 37% 26%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.2;
+    min-width: 320px;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: -0.01em;
+    line-height: 1.05;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer utilities {
+  .font-serif-display {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .font-sans-body {
+    font-family: 'Poppins', sans-serif;
+  }
+  .brand-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 0.95;
+  }
+  .brand-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.74rem;
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .body-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  .btn-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .section-padding {
+    @apply px-3 md:px-4;
+  }
+  .site-shell {
+    @apply mx-auto w-full max-w-[1360px] bg-background;
+  }
+  .section-frame {
+    @apply mx-auto w-full max-w-[1360px];
+  }
+  .boutique-transition {
+    transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .monogram-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 500;
+    border: 2px solid currentColor;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
