@@ -16,7 +16,7 @@ const Hero = () => {
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(241,236,232,0.76)_0%,rgba(241,236,232,0.2)_52%,rgba(241,236,232,0.08)_100%)]" />
 
-      <div className="relative z-10 section-frame min-h-[780px] pb-10 pt-24">
+      <div className="relative z-10 section-frame min-h-[780px] py-20 md:py-24">
         <div className="max-w-[430px] pt-10 md:pt-14">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}

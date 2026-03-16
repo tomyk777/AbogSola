@@ -1,1 +1,5 @@
-{}
+{
+  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/servicios/riesgos-de-trabajo/page": "app/servicios/riesgos-de-trabajo/page.js"
+}

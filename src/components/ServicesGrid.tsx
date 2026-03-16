@@ -49,7 +49,7 @@ const item = {
 
 const ServicesGrid = () => {
   return (
-    <section className="w-full bg-warm-white px-3 py-24 md:px-4 md:py-28">
+    <section className="w-full bg-warm-white px-3 py-20 md:px-4 md:py-24">
       <div className="section-frame">
         <h2 className="mb-14 text-center font-serif-display text-[58px] italic leading-none text-foreground md:text-[60px]">
           Servicios

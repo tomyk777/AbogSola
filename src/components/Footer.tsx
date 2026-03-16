@@ -3,7 +3,7 @@ import BrandMark from "@/components/BrandMark";
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-background px-3 pb-10 pt-16 md:px-4 md:pt-20 md:pb-14">
+      <div className="bg-background px-3 py-20 md:px-4 md:py-24">
         <div className="section-frame grid gap-10 md:grid-cols-[0.9fr_0.48fr_1.3fr] md:items-center">
           <div className="flex items-center gap-5">
             <BrandMark className="h-16 w-16 border-primary/80 text-primary/80" letterClassName="text-[49px]" />

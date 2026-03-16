@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
   return (
-    <section id="contacto" className="w-full bg-[#d7d1cb] px-3 py-20 md:px-4 md:py-28">
+    <section id="contacto" className="w-full bg-[#d7d1cb] px-3 py-20 md:px-4 md:py-24">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

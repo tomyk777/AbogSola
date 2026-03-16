@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="w-full bg-secondary text-secondary-foreground">
+    <section className="w-full bg-secondary px-3 py-20 text-secondary-foreground md:px-4 md:py-24">
       <div className="section-frame grid gap-0 md:grid-cols-[0.98fr_1.02fr]">
         <div className="flex items-center justify-center p-10 md:p-14">
           <Image
@@ -23,7 +23,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="flex flex-col justify-center px-6 py-20 md:px-10 md:py-24"
+          className="flex flex-col justify-center px-6 py-6 md:px-10 md:py-8"
         >
           <Scale className="mb-5 h-9 w-9 text-secondary-foreground/70" strokeWidth={1.15} />
           <h2 className="mb-5 font-sans text-[39px] font-semibold not-italic leading-[1.02] text-secondary-foreground md:text-[44px]">
