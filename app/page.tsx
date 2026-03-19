@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "Sofia Sola | Abogada",
     images: [
       {
-        url: "https://abogadasofiasola.vercel.app/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Simbolo S de Sofia Sola en violeta",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     description:
       "Asesoramiento legal en Córdoba en laboral, familia, sucesiones y multas de tránsito. Atención personalizada y respuesta rápida. ",
     images: [
-      "https://abogadasofiasola.vercel.app/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
+      "/og-image.png",
     ],
   },
   robots: {
