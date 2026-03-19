@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Sofia Sola | Abogada",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://abogadasofiasola.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Simbolo S de Sofia Sola en violeta",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Resolve tus multas | Sofia Sola Abogada",
     description: "Asesoramiento para descargos, reducción o eliminación de multas de tránsito en Córdoba. Consultá tu caso.",
     images: [
-      "/og-image.png",
+      "https://abogadasofiasola.vercel.app/og-image.png",
     ],
   },
 };
