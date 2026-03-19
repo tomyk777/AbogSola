@@ -189,20 +189,24 @@ export default function ContactoPage() {
               <form className="mt-8 space-y-4">
                 <input
                   type="text"
+                  aria-label="Nombre"
                   placeholder="Nombre"
                   className="h-14 w-full border border-primary/20 bg-[#ece4dd] px-4 text-[15px] text-primary placeholder:font-serif-display placeholder:text-[26px] placeholder:italic placeholder:leading-none placeholder:text-primary/55 focus:outline-none md:placeholder:text-[32px]"
                 />
                 <input
                   type="email"
+                  aria-label="Email"
                   placeholder="Email"
                   className="h-14 w-full border border-primary/20 bg-[#ece4dd] px-4 text-[15px] text-primary placeholder:font-serif-display placeholder:text-[26px] placeholder:italic placeholder:leading-none placeholder:text-primary/55 focus:outline-none md:placeholder:text-[32px]"
                 />
                 <input
                   type="tel"
+                  aria-label="Teléfono"
                   placeholder="Teléfono"
                   className="h-14 w-full border border-primary/20 bg-[#ece4dd] px-4 text-[15px] text-primary placeholder:font-serif-display placeholder:text-[26px] placeholder:italic placeholder:leading-none placeholder:text-primary/55 focus:outline-none md:placeholder:text-[32px]"
                 />
                 <textarea
+                  aria-label="Cuéntanos un poco sobre tu consulta"
                   placeholder="Cuéntanos un poco sobre tu consulta"
                   className="h-28 w-full resize-none border border-primary/20 bg-[#ece4dd] px-4 py-3 text-[15px] text-primary placeholder:font-serif-display placeholder:text-[26px] placeholder:italic placeholder:leading-none placeholder:text-primary/55 focus:outline-none md:placeholder:text-[32px]"
                 />

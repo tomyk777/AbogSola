@@ -11,7 +11,7 @@ export default function NotFound() {
   }, [pathname]);
 
   return (
-    <section className="w-full min-h-screen bg-muted">
+    <main className="w-full min-h-screen bg-muted">
       <div className="section-frame flex min-h-screen items-center justify-center text-center">
         <div>
           <h1 className="mb-4 text-4xl font-bold not-italic">404</h1>
@@ -21,6 +21,6 @@ export default function NotFound() {
           </a>
         </div>
       </div>
-    </section>
+    </main>
   );
 }

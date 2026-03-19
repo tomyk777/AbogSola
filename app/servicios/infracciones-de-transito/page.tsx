@@ -105,56 +105,57 @@ export default function InfraccionesTransitoPage() {
         )}
       </header>
 
-      <section className="w-full bg-[#f0ebe3] py-14 md:py-24">
-        <div className="mx-auto w-full max-w-[1280px] px-4 md:px-10">
-          <div className="mx-auto w-full max-w-[900px]">
-            <h1 className="mb-8 font-serif-display text-[44px] italic leading-none text-foreground md:mb-12 md:text-[56px]">
-              Infracciones de Tránsito
-            </h1>
+      <main>
+        <section className="w-full bg-[#f0ebe3] py-14 md:py-24">
+          <div className="mx-auto w-full max-w-[1280px] px-4 md:px-10">
+            <div className="mx-auto w-full max-w-[900px]">
+              <h1 className="mb-8 font-serif-display text-[44px] italic leading-none text-foreground md:mb-12 md:text-[56px]">
+                Infracciones de Tránsito
+              </h1>
 
-            <div className="mb-10 grid gap-8 md:mb-12 md:grid-cols-[210px_1fr] md:items-start md:gap-10">
-              <div className="flex h-[210px] w-full items-center justify-center bg-secondary px-6 py-6" />
+              <div className="mb-10 grid gap-8 md:mb-12 md:grid-cols-[210px_1fr] md:items-start md:gap-10">
+                <div className="flex h-[210px] w-full items-center justify-center bg-secondary px-6 py-6" />
 
-              <div className="space-y-5 text-[16px] leading-[1.28] text-foreground">
-                <p className="font-semibold">
-                  ¿Quisiste transferir el vehículo o renovar la licencia y te diste con infracciones de tránsito?
-                </p>
+                <div className="space-y-5 text-[16px] leading-[1.28] text-foreground">
+                  <p className="font-semibold">
+                    ¿Quisiste transferir el vehículo o renovar la licencia y te diste con infracciones de tránsito?
+                  </p>
+                  <p>
+                    Sabemos lo frustrante que puede ser esta situación y los altos costos de las mismas, por eso te ofrecemos asesoramiento gratuito y especializado para ayudarte a reducir o eliminar las infracciones que puedas tener registradas. Nuestro equipo es experto en derecho de tránsito.
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-[16px] leading-[1.28] text-foreground">
+                <p className="font-semibold">¿Por qué elegirnos?</p>
+                <p>-Experiencia y Especialización.</p>
+                <p>-Atención Personalizada.</p>
+                <p>-Compromiso y Excelencia.</p>
+
+                <p className="pt-4 font-semibold">Contactanos Hoy Mismo</p>
                 <p>
-                  Sabemos lo frustrante que puede ser esta situación y los altos costos de las mismas, por eso te ofrecemos asesoramiento gratuito y especializado para ayudarte a reducir o eliminar las infracciones que puedas tener registradas. Nuestro equipo es experto en derecho de tránsito.
+                  Si buscas un abogado especializado en la reducción de infracciones de tránsito, no dudes en contactarnos. Estamos aquí para ayudarte a resolver tus inconvenientes viales y brindarte la asesoría que necesitas.
+                </p>
+
+                <p className="pt-1">
+                  <a href="/#contacto" className="text-foreground underline underline-offset-2 hover:text-primary boutique-transition">
+                    Hacé tu Consulta Gratuita sobre Infracciones de Tránsito
+                  </a>
                 </p>
               </div>
-            </div>
 
-            <div className="space-y-4 text-[16px] leading-[1.28] text-foreground">
-              <p className="font-semibold">¿Por qué elegirnos?</p>
-              <p>-Experiencia y Especialización.</p>
-              <p>-Atención Personalizada.</p>
-              <p>-Compromiso y Excelencia.</p>
-
-              <p className="pt-4 font-semibold">Contactanos Hoy Mismo</p>
-              <p>
-                Si buscas un abogado especializado en la reducción de infracciones de tránsito, no dudes en contactarnos. Estamos aquí para ayudarte a resolver tus inconvenientes viales y brindarte la asesoría que necesitas.
-              </p>
-
-              <p className="pt-1">
-                <a href="/#contacto" className="text-foreground underline underline-offset-2 hover:text-primary boutique-transition">
-                  Hacé tu Consulta Gratuita sobre Infracciones de Tránsito
-                </a>
-              </p>
-            </div>
-
-            <div className="mt-10 flex flex-wrap items-center gap-5 md:mt-11">
-              <Button variant="plum" className="h-[46px] min-w-[164px] px-8 btn-text text-[17px] md:text-[18px]">
-                Contacta hoy mismo
-              </Button>
-             
+              <div className="mt-10 flex flex-wrap items-center gap-5 md:mt-11">
+                <Button variant="plum" className="h-[46px] min-w-[164px] px-8 btn-text text-[17px] md:text-[18px]">
+                  Contacta hoy mismo
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div className="border-t border-primary/55" />
-      <CTASection />
+        <div className="border-t border-primary/55" />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );

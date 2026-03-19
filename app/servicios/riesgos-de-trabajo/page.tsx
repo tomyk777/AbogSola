@@ -26,54 +26,55 @@ export default function RiesgosTrabajoPage() {
         </div>
       </header>
 
-      <section className="w-full bg-[#F0EBE3] py-16">
-        <div className="mx-auto w-full max-w-[900px] px-6 md:px-10 lg:px-12">
-          <h1 className="mb-10 font-serif-display text-[54px] italic leading-none text-foreground md:mb-12 md:text-[56px]">
-            Riesgos de Trabajo
-          </h1>
+      <main>
+        <section className="w-full bg-[#F0EBE3] py-16">
+          <div className="mx-auto w-full max-w-[900px] px-6 md:px-10 lg:px-12">
+            <h1 className="mb-10 font-serif-display text-[54px] italic leading-none text-foreground md:mb-12 md:text-[56px]">
+              Riesgos de Trabajo
+            </h1>
 
-          <div className="mb-10 grid gap-8 md:mb-12 md:grid-cols-[210px_1fr] md:items-start md:gap-10">
-            <div className="h-[210px] w-full bg-secondary" />
+            <div className="mb-10 grid gap-8 md:mb-12 md:grid-cols-[210px_1fr] md:items-start md:gap-10">
+              <div className="h-[210px] w-full bg-secondary" />
 
-            <div className="space-y-5 text-[16px] leading-[1.28] text-foreground">
+              <div className="space-y-5 text-[16px] leading-[1.28] text-foreground">
+                <p>
+                  ¿Tuviste un accidente de trabajo o estás pasando por una enfermedad profesional? ¿O tuviste un accidente de tránsito yendo o volviendo del trabajo?
+                </p>
+                <p>
+                  Los accidentes de trabajo y las enfermedades profesionales pueden alterar significativamente tu vida y tu estabilidad emocional y financiera. Es esencial contar con un abogado especializado que te guíe en cada paso del proceso legal, asegurando que recibas la atención que mereces y su compensación.
+                </p>
+                <p>
+                  Recordá que tenés un plazo de 2 años para hacer el reclamo. No te quedes sin reclamar.
+                </p>
+              </div>
+            </div>
+            <div className="space-y-4 text-[16px] leading-[1.28] text-foreground">
+              <p className="font-semibold">Nuestros servicios incluyen:</p>
+              <p><span className="font-semibold">Asesoramiento integral:</span> Te orientamos desde el momento del accidente o diagnostico, explicándote tus derechos y las acciones a seguir.</p>
+              <p><span className="font-semibold">Gestión de reclamos:</span> Nos encargamos de todo el proceso administrativo para que no tenga que preocuparte por nada y puedas concentrarte en tu recuperación.</p>
+              <p><span className="font-semibold">Representación legal:</span> Defendemos tus intereses ante las autoridades competentes, asegurando que se reconozcan y respeten tus derechos laborales.</p>
+
+              <p className="pt-1 font-semibold">¿Por qué elegirnos?</p>
+              <p><span className="font-semibold">Compromiso con el cliente:</span> Tu bienestar es nuestra prioridad; trabajamos incansablemente para obtener los mejores resultados.</p>
+              <p><span className="font-semibold">Atención personalizada:</span> Cada caso es único; ofrecemos soluciones adaptadas a tus necesidades específicas.</p>
+
+              <p className="pt-3 font-semibold">No enfrentes solo las consecuencias de un accidente laboral o enfermedad profesional.</p>
               <p>
-                ¿Tuviste un accidente de trabajo o estás pasando por una enfermedad profesional? ¿O tuviste un accidente de tránsito yendo o volviendo del trabajo?
-              </p>
-              <p>
-                Los accidentes de trabajo y las enfermedades profesionales pueden alterar significativamente tu vida y tu estabilidad emocional y financiera. Es esencial contar con un abogado especializado que te guíe en cada paso del proceso legal, asegurando que recibas la atención que mereces y su compensación.
-              </p>
-              <p>
-                Recordá que tenés un plazo de 2 años para hacer el reclamo. No te quedes sin reclamar.
+                Contáctanos hoy mismo para una consulta inicial y descubre como podemos ayudarte a proteger tus derechos y tu futuro.
               </p>
             </div>
+
+            <div className="mt-10 md:mt-11">
+              <Button variant="plum" className="h-[46px] min-w-[164px] px-8 btn-text text-[17px] md:text-[18px]">
+                Contacta hoy mismo
+              </Button>
+            </div>
           </div>
+        </section>
 
-          <div className="space-y-4 text-[16px] leading-[1.28] text-foreground">
-            <p className="font-semibold">Nuestros servicios incluyen:</p>
-            <p><span className="font-semibold">Asesoramiento integral:</span> Te orientamos desde el momento del accidente o diagnostico, explicándote tus derechos y las acciones a seguir.</p>
-            <p><span className="font-semibold">Gestión de reclamos:</span> Nos encargamos de todo el proceso administrativo para que no tenga que preocuparte por nada y puedas concentrarte en tu recuperación.</p>
-            <p><span className="font-semibold">Representación legal:</span> Defendemos tus intereses ante las autoridades competentes, asegurando que se reconozcan y respeten tus derechos laborales.</p>
-
-            <p className="pt-1 font-semibold">¿Por qué elegirnos?</p>
-            <p><span className="font-semibold">Compromiso con el cliente:</span> Tu bienestar es nuestra prioridad; trabajamos incansablemente para obtener los mejores resultados.</p>
-            <p><span className="font-semibold">Atención personalizada:</span> Cada caso es único; ofrecemos soluciones adaptadas a tus necesidades específicas.</p>
-
-            <p className="pt-3 font-semibold">No enfrentes solo las consecuencias de un accidente laboral o enfermedad profesional.</p>
-            <p>
-              Contáctanos hoy mismo para una consulta inicial y descubre como podemos ayudarte a proteger tus derechos y tu futuro.
-            </p>
-          </div>
-
-          <div className="mt-10 md:mt-11">
-            <Button variant="plum" className="h-[46px] min-w-[164px] px-8 btn-text text-[17px] md:text-[18px]">
-              Contacta hoy mismo
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      <div className="border-t border-primary/55" />
-      <CTASection />
+        <div className="border-t border-primary/55" />
+        <CTASection />
+      </main>
       <Footer />
     </div>
   );

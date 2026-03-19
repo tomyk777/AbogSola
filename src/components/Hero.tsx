@@ -124,6 +124,38 @@ const Hero = () => {
             </p>
           </div>
         </motion.div>
+
+        <div className="pointer-events-none absolute bottom-24 left-1/2 z-20 w-[calc(100%-20px)] max-w-[1080px] -translate-x-1/2 md:bottom-16">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.9 }}
+            className="rounded-full border border-primary/20 bg-[#efe8e3]/92 px-5 py-3.5 shadow-[0_14px_34px_rgba(74,46,32,0.16)] backdrop-blur-[2px] md:border-primary/40 md:bg-[#f4ece5]/98 md:px-10 md:py-4 md:shadow-[0_16px_34px_rgba(56,31,45,0.24)]"
+            aria-label="Provincias con cobertura legal"
+          >
+            <div className="flex items-center justify-center gap-4 md:gap-6">
+              <Image
+                src="/icons/LOGOS%20SOFIA%20SOLA_LLAVE-73.svg"
+                width={48}
+                height={48}
+                className="h-auto w-[24px] opacity-90 md:w-[30px] md:opacity-100"
+                alt=""
+                aria-hidden="true"
+              />
+              <p className="text-center text-[12px] font-semibold tracking-[0.11em] text-primary/90 md:text-[14px] md:text-primary">
+                CORDOBA  |  BUENOS AIRES  |  SANTA FE  |  ENTRE RIOS  |  MISIONES
+              </p>
+              <Image
+                src="/icons/LOGOS%20SOFIA%20SOLA_MAZO-55.svg"
+                width={48}
+                height={48}
+                className="h-auto w-[24px] opacity-90 md:w-[30px] md:opacity-100"
+                alt=""
+                aria-hidden="true"
+              />
+            </div>
+          </motion.div>
+        </div>
       </div>
 
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(74,46,32,0.08)_0%,rgba(74,46,32,0)_100%)]" />

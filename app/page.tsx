@@ -7,13 +7,13 @@ import CTASection from "@/components/CTASection";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background">
       <Hero />
       <About />
       <WhyChooseUs />
       <ServicesIntro />
       <ServicesGrid />
       <CTASection />
-    </div>
+    </main>
   );
 }
