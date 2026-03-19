@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 const services = [
   {
@@ -49,15 +48,6 @@ const item = {
 };
 
 const ServicesGrid = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.matchMedia("(max-width: 768px)").matches);
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
-
   return (
     <section className="w-full bg-warm-white px-3 py-24 md:px-4">
       <div className="section-frame">
@@ -65,96 +55,56 @@ const ServicesGrid = () => {
           Servicios
         </h2>
         {/* Fila 1: 4 servicios */}
-        {!isMobile ? (
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-50px" }}
-            className="mb-10 grid grid-cols-1 gap-10 text-center sm:grid-cols-2 lg:grid-cols-4"
-          >
-            {services.slice(0, 4).map((service) => (
-              <motion.div
-                key={service.title}
-                variants={item}
-                className="group mx-auto max-w-[250px] rounded-xl border border-transparent p-8 boutique-transition hover:-translate-y-1 hover:border-primary/20 hover:bg-[#efe9e3]"
-              >
-                {service.path ? (
-                  <Link href={service.path} className="mb-3 inline-block font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">
-                    {service.title}
-                  </Link>
-                ) : (
-                  <h3 className="mb-3 font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">{service.title}</h3>
-                )}
-                <p className="font-sans-body text-sm font-normal leading-[1.3] text-[#2B2B2B] boutique-transition group-hover:text-[#2B2B2B]/85">{service.description}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        ) : (
-          <div className="mb-10 grid grid-cols-1 gap-10 text-center sm:grid-cols-2 lg:grid-cols-4">
-            {services.slice(0, 4).map((service) => (
-              <div
-                key={service.title}
-                className="group mx-auto max-w-[250px] rounded-xl border border-transparent p-8 boutique-transition hover:-translate-y-1 hover:border-primary/20 hover:bg-[#efe9e3]"
-              >
-                {service.path ? (
-                  <Link href={service.path} className="mb-3 inline-block font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">
-                    {service.title}
-                  </Link>
-                ) : (
-                  <h3 className="mb-3 font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">{service.title}</h3>
-                )}
-                <p className="font-sans-body text-sm font-normal leading-[1.3] text-[#2B2B2B] boutique-transition group-hover:text-[#2B2B2B]/85">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        )}
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-50px" }}
+          className="mb-10 grid grid-cols-1 gap-10 text-center sm:grid-cols-2 lg:grid-cols-4"
+        >
+          {services.slice(0, 4).map((service) => (
+            <motion.div
+              key={service.title}
+              variants={item}
+              className="group mx-auto max-w-[250px] rounded-xl border border-transparent p-8 boutique-transition hover:-translate-y-1 hover:border-primary/20 hover:bg-[#efe9e3]"
+            >
+              {service.path ? (
+                <Link href={service.path} className="mb-3 inline-block font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">
+                  {service.title}
+                </Link>
+              ) : (
+                <h3 className="mb-3 font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">{service.title}</h3>
+              )}
+              <p className="font-sans-body text-sm font-normal leading-[1.3] text-[#2B2B2B] boutique-transition group-hover:text-[#2B2B2B]/85">{service.description}</p>
+            </motion.div>
+          ))}
+        </motion.div>
 
         {/* Fila 2: 3 servicios centrados */}
-        {!isMobile ? (
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, margin: "-50px" }}
-            className="flex flex-wrap justify-center gap-10"
-          >
-            {services.slice(4).map((service) => (
-              <motion.div
-                key={service.title}
-                variants={item}
-                className="group w-full max-w-[250px] rounded-xl border border-transparent p-8 text-center boutique-transition hover:-translate-y-1 hover:border-primary/20 hover:bg-[#efe9e3]"
-              >
-                {service.path ? (
-                  <Link href={service.path} className="mb-3 inline-block font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">
-                    {service.title}
-                  </Link>
-                ) : (
-                  <h3 className="mb-3 font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">{service.title}</h3>
-                )}
-                <p className="font-sans-body text-sm font-normal leading-[1.3] text-[#2B2B2B] boutique-transition group-hover:text-[#2B2B2B]/85">{service.description}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        ) : (
-          <div className="flex flex-wrap justify-center gap-10">
-            {services.slice(4).map((service) => (
-              <div
-                key={service.title}
-                className="group w-full max-w-[250px] rounded-xl border border-transparent p-8 text-center boutique-transition hover:-translate-y-1 hover:border-primary/20 hover:bg-[#efe9e3]"
-              >
-                {service.path ? (
-                  <Link href={service.path} className="mb-3 inline-block font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">
-                    {service.title}
-                  </Link>
-                ) : (
-                  <h3 className="mb-3 font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">{service.title}</h3>
-                )}
-                <p className="font-sans-body text-sm font-normal leading-[1.3] text-[#2B2B2B] boutique-transition group-hover:text-[#2B2B2B]/85">{service.description}</p>
-              </div>
-            ))}
-          </div>
-        )}
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-50px" }}
+          className="flex flex-wrap justify-center gap-10"
+        >
+          {services.slice(4).map((service) => (
+            <motion.div
+              key={service.title}
+              variants={item}
+              className="group w-full max-w-[250px] rounded-xl border border-transparent p-8 text-center boutique-transition hover:-translate-y-1 hover:border-primary/20 hover:bg-[#efe9e3]"
+            >
+              {service.path ? (
+                <Link href={service.path} className="mb-3 inline-block font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">
+                  {service.title}
+                </Link>
+              ) : (
+                <h3 className="mb-3 font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">{service.title}</h3>
+              )}
+              <p className="font-sans-body text-sm font-normal leading-[1.3] text-[#2B2B2B] boutique-transition group-hover:text-[#2B2B2B]/85">{service.description}</p>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
