@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
@@ -15,9 +14,15 @@ const WhyChooseUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="w-full"
+            className="relative w-full pt-20"
           >
-            <Shield className="mb-5 h-9 w-9 text-primary" strokeWidth={1.15} />
+            <Image
+              src="/icons/LOGOS%20SOFIA%20SOLA_MAZO-55.svg"
+              width={350}
+              height={350}
+              className="absolute right-1 top-0 h-auto w-[86px]"
+              alt="Icono de mazo"
+            />
             <h2 className="mb-7 font-sans text-[39px] font-semibold not-italic leading-[1.05] text-primary md:text-[45px]">
               ¿Por qué elegirnos?
             </h2>
@@ -40,11 +45,11 @@ const WhyChooseUs = () => {
 
           <div className="h-full min-h-[360px] overflow-hidden rounded-[8px] md:min-h-[520px]">
             <Image
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000"
+              src="/Fotos-landing/estudio2.jpeg"
               width={1000}
               height={1300}
               className="h-full w-full object-cover grayscale-[10%]"
-              alt="Persona trabajando en laptop"
+              alt="Estudio juridico"
             />
           </div>
         </div>

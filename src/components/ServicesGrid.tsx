@@ -32,6 +32,7 @@ const services = [
   {
     title: "Infracciones de Tránsito",
     description: "¿Quisiste transferir el vehículo o renovar la licencia y te diste con infracciones de transito?",
+    path: "/servicios/infracciones-de-transito",
   },
 ];
 
@@ -49,7 +50,7 @@ const item = {
 
 const ServicesGrid = () => {
   return (
-    <section className="w-full bg-warm-white px-3 py-20 md:px-4 md:py-24">
+    <section className="w-full bg-warm-white px-3 py-24 md:px-4">
       <div className="section-frame">
         <h2 className="mb-14 text-center font-serif-display text-[58px] italic leading-none text-foreground md:text-[60px]">
           Servicios
@@ -60,18 +61,22 @@ const ServicesGrid = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-50px" }}
-          className="mb-12 grid grid-cols-1 gap-x-10 gap-y-12 text-center sm:grid-cols-2 lg:grid-cols-4"
+          className="mb-10 grid grid-cols-1 gap-10 text-center sm:grid-cols-2 lg:grid-cols-4"
         >
           {services.slice(0, 4).map((service) => (
-            <motion.div key={service.title} variants={item} className="mx-auto max-w-[250px]">
+            <motion.div
+              key={service.title}
+              variants={item}
+              className="group mx-auto max-w-[250px] rounded-xl border border-transparent p-8 boutique-transition hover:-translate-y-1 hover:border-primary/20 hover:bg-[#efe9e3]"
+            >
               {service.path ? (
-                <Link href={service.path} className="mb-3 inline-block font-sans text-[17px] font-semibold not-italic leading-tight text-foreground hover:text-primary boutique-transition md:text-[18px]">
+                <Link href={service.path} className="mb-3 inline-block font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">
                   {service.title}
                 </Link>
               ) : (
-                <h3 className="mb-3 font-sans text-[17px] font-semibold not-italic leading-tight text-foreground md:text-[18px]">{service.title}</h3>
+                <h3 className="mb-3 font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">{service.title}</h3>
               )}
-              <p className="text-[15px] leading-[1.3] text-foreground/80 md:text-[16px]">{service.description}</p>
+              <p className="font-sans-body text-sm font-normal leading-[1.3] text-[#2B2B2B] boutique-transition group-hover:text-[#2B2B2B]/85">{service.description}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -82,18 +87,22 @@ const ServicesGrid = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-50px" }}
-          className="flex flex-wrap justify-center gap-x-10 gap-y-12"
+          className="flex flex-wrap justify-center gap-10"
         >
           {services.slice(4).map((service) => (
-            <motion.div key={service.title} variants={item} className="w-full max-w-[250px] text-center">
+            <motion.div
+              key={service.title}
+              variants={item}
+              className="group w-full max-w-[250px] rounded-xl border border-transparent p-8 text-center boutique-transition hover:-translate-y-1 hover:border-primary/20 hover:bg-[#efe9e3]"
+            >
               {service.path ? (
-                <Link href={service.path} className="mb-3 inline-block font-sans text-[17px] font-semibold not-italic leading-tight text-foreground hover:text-primary boutique-transition md:text-[18px]">
+                <Link href={service.path} className="mb-3 inline-block font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">
                   {service.title}
                 </Link>
               ) : (
-                <h3 className="mb-3 font-sans text-[17px] font-semibold not-italic leading-tight text-foreground md:text-[18px]">{service.title}</h3>
+                <h3 className="mb-3 font-sans-body text-base font-bold not-italic leading-tight text-[#51213D] boutique-transition group-hover:text-primary">{service.title}</h3>
               )}
-              <p className="text-[15px] leading-[1.3] text-foreground/80 md:text-[16px]">{service.description}</p>
+              <p className="font-sans-body text-sm font-normal leading-[1.3] text-[#2B2B2B] boutique-transition group-hover:text-[#2B2B2B]/85">{service.description}</p>
             </motion.div>
           ))}
         </motion.div>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 596.06 168.49">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .1em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: CormorantGaramond-Italic, 'Cormorant Garamond';
+        font-style: italic;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        font-size: 104.28px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: #d6ccc4;
+      }
+
+      .cls-6 {
+        letter-spacing: .08em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-4 {
+        font-family: PetitFormalScript-Regular, 'Petit Formal Script';
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        font-family: AltoneTrial-Regular, 'Altone Trial';
+        font-size: 34.43px;
+      }
+    </style>
+  </defs>
+  <g>
+    <text class="cls-2" transform="translate(70.88 116.31)"><tspan x="0" y="0">ofía</tspan></text>
+    <g>
+      <text class="cls-3" transform="translate(266.59 116.31)"><tspan x="0" y="0">ola</tspan></text>
+      <text class="cls-4" transform="translate(210.52 115.98)"><tspan x="0" y="0">S</tspan></text>
+    </g>
+    <text class="cls-4" transform="translate(15.49 115.98)"><tspan x="0" y="0">S</tspan></text>
+  </g>
+  <text class="cls-5" transform="translate(390.02 116.41)"><tspan class="cls-1" x="0" y="0">ABOGA</tspan><tspan class="cls-6" x="139.77" y="0">D</tspan><tspan class="cls-1" x="167.66" y="0">A</tspan></text>
+</svg>

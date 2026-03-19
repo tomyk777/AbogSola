@@ -11,9 +11,9 @@ const CTASection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="section-frame text-center"
+        className="mx-auto max-w-[680px] text-center"
       >
-        <h2 className="mb-8 font-serif-display text-[54px] italic leading-[0.95] text-primary/85 md:text-[58px]">
+        <h2 className="mb-8 font-serif-display text-4xl italic leading-[0.95] text-[#51213D]">
           Ponte en contacto conmigo y
           <br />
           cuéntame tu caso
@@ -22,9 +22,6 @@ const CTASection = () => {
           Contacta conmigo
         </Button>
       </motion.div>
-      <div className="section-frame mt-14">
-        <div className="border-b border-primary/55" />
-      </div>
     </section>
   );
 };
