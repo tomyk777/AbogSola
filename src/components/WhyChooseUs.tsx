@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 const WhyChooseUs = () => {
+  const whatsappHref = "https://wa.me/54357315445933";
+
   return (
     <section className="w-full bg-[#ede8e1] px-3 py-20 md:px-4 md:py-24">
       <div className="section-frame">
@@ -37,8 +39,8 @@ const WhyChooseUs = () => {
               </div>
             </div>
             <div className="mt-9">
-              <Button variant="plum" className="h-[45px] min-w-[210px] px-7 btn-text text-[17px] md:text-[18px]">
-                Contacta conmigo
+              <Button variant="plum" asChild className="h-[45px] min-w-[210px] px-7 btn-text text-[17px] md:text-[18px]">
+                <a href={whatsappHref} target="_blank" rel="noreferrer">Contacta conmigo</a>
               </Button>
             </div>
           </motion.div>

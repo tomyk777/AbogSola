@@ -6,6 +6,12 @@ import Footer from "@/components/Footer";
 
 export default function ContactoPageClient() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    nombre: "",
+    email: "",
+    telefono: "",
+    consulta: "",
+  });
 
   const contactLinks = {
     website: "https://abogadasofiasola.com",
@@ -22,6 +28,31 @@ export default function ContactoPageClient() {
     { label: "Servicios", href: "/#servicios" },
     { label: "Contacto", href: "/contacto" },
   ];
+
+  const handleInputChange = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = event.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const whatsappNumber = contactLinks.whatsapp.replace("https://wa.me/", "");
+    const message = [
+      "Hola Sofia, quiero hacer una consulta legal.",
+      "",
+      `Nombre: ${formData.nombre.trim() || "-"}`,
+      `Email: ${formData.email.trim() || "-"}`,
+      `Telefono: ${formData.telefono.trim() || "-"}`,
+      `Consulta: ${formData.consulta.trim() || "-"}`,
+    ].join("\n");
+
+    window.location.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+  };
 
   return (
     <div className="min-h-screen bg-[#d5ccd8]">
@@ -186,28 +217,40 @@ export default function ContactoPageClient() {
                 Llámanos o escríbenos para acceder a una consulta inicial. Estamos aquí para resolver tu problema legal hoy.
               </p>
 
-              <form className="mt-8 space-y-4">
+              <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
                 <input
                   type="text"
+                  name="nombre"
                   aria-label="Nombre"
                   placeholder="Nombre"
+                  value={formData.nombre}
+                  onChange={handleInputChange}
                   className="h-14 w-full border border-primary/20 bg-[#ece4dd] px-4 text-[15px] text-primary placeholder:font-serif-display placeholder:text-[26px] placeholder:italic placeholder:leading-none placeholder:text-primary/55 focus:outline-none md:placeholder:text-[32px]"
                 />
                 <input
                   type="email"
+                  name="email"
                   aria-label="Email"
                   placeholder="Email"
+                  value={formData.email}
+                  onChange={handleInputChange}
                   className="h-14 w-full border border-primary/20 bg-[#ece4dd] px-4 text-[15px] text-primary placeholder:font-serif-display placeholder:text-[26px] placeholder:italic placeholder:leading-none placeholder:text-primary/55 focus:outline-none md:placeholder:text-[32px]"
                 />
                 <input
                   type="tel"
+                  name="telefono"
                   aria-label="Teléfono"
                   placeholder="Teléfono"
+                  value={formData.telefono}
+                  onChange={handleInputChange}
                   className="h-14 w-full border border-primary/20 bg-[#ece4dd] px-4 text-[15px] text-primary placeholder:font-serif-display placeholder:text-[26px] placeholder:italic placeholder:leading-none placeholder:text-primary/55 focus:outline-none md:placeholder:text-[32px]"
                 />
                 <textarea
+                  name="consulta"
                   aria-label="Cuéntanos un poco sobre tu consulta"
                   placeholder="Cuéntanos un poco sobre tu consulta"
+                  value={formData.consulta}
+                  onChange={handleInputChange}
                   className="h-28 w-full resize-none border border-primary/20 bg-[#ece4dd] px-4 py-3 text-[15px] text-primary placeholder:font-serif-display placeholder:text-[26px] placeholder:italic placeholder:leading-none placeholder:text-primary/55 focus:outline-none md:placeholder:text-[32px]"
                 />
 

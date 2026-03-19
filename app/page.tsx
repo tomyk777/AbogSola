@@ -60,9 +60,48 @@ export const metadata: Metadata = {
   },
 };
 
+const homeStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://abogadasofiasola.com/#legalservice",
+  name: "Sofia Sola Abogada",
+  url: "https://abogadasofiasola.com/",
+  image: "https://abogadasofiasola.com/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
+  telephone: "+54 3573 15445933",
+  email: "abogadasofiasola@gmail.com",
+  areaServed: ["Cordoba", "Argentina"],
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Hipolito Yrigoyen esq. Salta",
+    addressLocality: "Villa del Rosario",
+    addressRegion: "Cordoba",
+    addressCountry: "AR",
+  },
+  availableLanguage: ["es"],
+  sameAs: ["https://www.instagram.com/abogadasofiasola/"],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Servicios legales",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Riesgos de Trabajo" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Laboral" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Familia" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sucesiones" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Usucapion" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Escrituracion" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Infracciones de Transito" } }
+    ],
+  },
+};
+
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeStructuredData) }}
+      />
       <Hero />
       <About />
       <WhyChooseUs />

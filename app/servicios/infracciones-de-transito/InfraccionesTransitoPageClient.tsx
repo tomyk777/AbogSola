@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export default function InfraccionesTransitoPageClient() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const whatsappHref = "https://wa.me/54357315445933";
+  const whatsappHref = "https://wa.me/54357315445933?text=Hola%20Sofia%2C%20quiero%20hacer%20una%20consulta%20por%20infracciones%20de%20transito.";
 
   const links = [
     { label: "Inicio", href: "/#inicio" },
@@ -138,15 +138,15 @@ export default function InfraccionesTransitoPageClient() {
                 </p>
 
                 <p className="pt-1">
-                  <a href="/#contacto" className="text-foreground underline underline-offset-2 hover:text-primary boutique-transition">
+                  <a href="/contacto" className="text-foreground underline underline-offset-2 hover:text-primary boutique-transition">
                     Hacé tu Consulta Gratuita sobre Infracciones de Tránsito
                   </a>
                 </p>
               </div>
 
               <div className="mt-10 flex flex-wrap items-center gap-5 md:mt-11">
-                <Button variant="plum" className="h-[46px] min-w-[164px] px-8 btn-text text-[17px] md:text-[18px]">
-                  Contacta hoy mismo
+                <Button variant="plum" asChild className="h-[46px] min-w-[164px] px-8 btn-text text-[17px] md:text-[18px]">
+                  <a href={whatsappHref} target="_blank" rel="noreferrer">Contacta hoy mismo</a>
                 </Button>
               </div>
             </div>

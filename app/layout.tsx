@@ -10,6 +10,38 @@ export const metadata: Metadata = {
   description: "Asesoramiento legal en laboral, familia y reales.",
 };
 
+const siteStructuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://abogadasofiasola.com/#organization",
+      name: "Sofia Sola Abogada",
+      url: "https://abogadasofiasola.com/",
+      telephone: "+54 3573 15445933",
+      email: "abogadasofiasola@gmail.com",
+      sameAs: ["https://www.instagram.com/abogadasofiasola/"],
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Hipolito Yrigoyen esq. Salta",
+        addressLocality: "Villa del Rosario",
+        addressRegion: "Cordoba",
+        addressCountry: "AR",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://abogadasofiasola.com/#website",
+      url: "https://abogadasofiasola.com/",
+      name: "Sofia Sola | Abogada",
+      inLanguage: "es-AR",
+      publisher: {
+        "@id": "https://abogadasofiasola.com/#organization",
+      },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,6 +50,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteStructuredData) }}
+        />
         <Providers>
           <LayoutShell>{children}</LayoutShell>
           <WhatsAppButton />

@@ -1,10 +1,12 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   const contactLinks = {
     phone: "https://wa.me/54357315445933",
     email: "mailto:abogadasofiasola@gmail.com",
     instagram: "https://www.instagram.com/abogadasofiasola",
+    instagramMultas: "https://www.instagram.com/resolvetusmultas_",
     location: "https://www.google.com/maps/search/?api=1&query=Hipolito+Yrigoyen+esq.+Salta,+Villa+del+Rosario,+Cordoba",
   };
 
@@ -66,11 +68,19 @@ const Footer = () => {
                 </a>
               </p>
               <p>
+                <span className="font-semibold text-primary">Instagram:</span>{" "}
+                <a href={contactLinks.instagramMultas} target="_blank" rel="noreferrer" className="underline-offset-2 hover:text-primary hover:underline boutique-transition">
+                  @resolvetusmultas_
+                </a>
+              </p>
+              <p>
                 <span className="font-semibold text-primary">Dirección:</span>{" "}
                 <a href={contactLinks.location} target="_blank" rel="noreferrer" className="underline-offset-2 hover:text-primary hover:underline boutique-transition">
                   Hipolito Yrigoyen esq. Salta, Villa del Rosario, Córdoba.
                 </a>
               </p>
+
+             
             </div>
           </div>
         </div>
