@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Providers from "@/components/Providers";
 import LayoutShell from "@/components/LayoutShell";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "@/index.css";
 import "@/App.css";
 
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <LayoutShell>{children}</LayoutShell>
+          <WhatsAppButton />
         </Providers>
       </body>
     </html>

@@ -1,24 +1,5 @@
 {
   "pages": {
-    "/contacto/page": [
-      "static/chunks/webpack-19914c046a9cf5bc.js",
-      "static/chunks/fd9d1056-a7129889b45a2c4a.js",
-      "static/chunks/117-c8e8a582336a8917.js",
-      "static/chunks/main-app-349d084eb71ccce1.js",
-      "static/chunks/878-5f2c4ec1078f4d77.js",
-      "static/chunks/app/contacto/page-f1fc1a448a7b173b.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack-19914c046a9cf5bc.js",
-      "static/chunks/fd9d1056-a7129889b45a2c4a.js",
-      "static/chunks/117-c8e8a582336a8917.js",
-      "static/chunks/main-app-349d084eb71ccce1.js",
-      "static/css/076f977724d90a8d.css",
-      "static/chunks/878-5f2c4ec1078f4d77.js",
-      "static/chunks/569-9e270b569e1e336a.js",
-      "static/chunks/746-49a83e2739599478.js",
-      "static/chunks/app/layout-23d5a07042d9075b.js"
-    ],
     "/not-found": [
       "static/chunks/webpack-19914c046a9cf5bc.js",
       "static/chunks/fd9d1056-a7129889b45a2c4a.js",
@@ -26,15 +7,23 @@
       "static/chunks/main-app-349d084eb71ccce1.js",
       "static/chunks/app/not-found-bdb49c2ce767e40a.js"
     ],
-    "/servicios/infracciones-de-transito/page": [
+    "/_not-found/page": [
       "static/chunks/webpack-19914c046a9cf5bc.js",
       "static/chunks/fd9d1056-a7129889b45a2c4a.js",
       "static/chunks/117-c8e8a582336a8917.js",
       "static/chunks/main-app-349d084eb71ccce1.js",
+      "static/chunks/app/_not-found/page-c1bbe1b4bc8170a6.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-19914c046a9cf5bc.js",
+      "static/chunks/fd9d1056-a7129889b45a2c4a.js",
+      "static/chunks/117-c8e8a582336a8917.js",
+      "static/chunks/main-app-349d084eb71ccce1.js",
+      "static/css/068c58faacc28c43.css",
       "static/chunks/878-5f2c4ec1078f4d77.js",
       "static/chunks/569-9e270b569e1e336a.js",
-      "static/chunks/719-fa33ad9bb2cdd575.js",
-      "static/chunks/app/servicios/infracciones-de-transito/page-c7ccb24759f9337d.js"
+      "static/chunks/746-49a83e2739599478.js",
+      "static/chunks/app/layout-a1e678e8d5381306.js"
     ],
     "/page": [
       "static/chunks/webpack-19914c046a9cf5bc.js",
@@ -45,14 +34,25 @@
       "static/chunks/569-9e270b569e1e336a.js",
       "static/chunks/719-fa33ad9bb2cdd575.js",
       "static/chunks/726-39cbf04c79ba21d2.js",
-      "static/chunks/app/page-33e3f50e730b851b.js"
+      "static/chunks/app/page-b8579b0a645cf226.js"
     ],
-    "/_not-found/page": [
+    "/contacto/page": [
       "static/chunks/webpack-19914c046a9cf5bc.js",
       "static/chunks/fd9d1056-a7129889b45a2c4a.js",
       "static/chunks/117-c8e8a582336a8917.js",
       "static/chunks/main-app-349d084eb71ccce1.js",
-      "static/chunks/app/_not-found/page-c1bbe1b4bc8170a6.js"
+      "static/chunks/878-5f2c4ec1078f4d77.js",
+      "static/chunks/app/contacto/page-2acb3bf350d84473.js"
+    ],
+    "/servicios/infracciones-de-transito/page": [
+      "static/chunks/webpack-19914c046a9cf5bc.js",
+      "static/chunks/fd9d1056-a7129889b45a2c4a.js",
+      "static/chunks/117-c8e8a582336a8917.js",
+      "static/chunks/main-app-349d084eb71ccce1.js",
+      "static/chunks/878-5f2c4ec1078f4d77.js",
+      "static/chunks/569-9e270b569e1e336a.js",
+      "static/chunks/719-fa33ad9bb2cdd575.js",
+      "static/chunks/app/servicios/infracciones-de-transito/page-487fd859eaf8d80e.js"
     ],
     "/servicios/riesgos-de-trabajo/page": [
       "static/chunks/webpack-19914c046a9cf5bc.js",

@@ -7,7 +7,6 @@ const services = [
   {
     title: "Riesgos de Trabajo",
     description: "¿Tuviste un accidente de trabajo o estás pasando por una enfermedad profesional?",
-    path: "/servicios/riesgos-de-trabajo",
   },
   {
     title: "Laboral",

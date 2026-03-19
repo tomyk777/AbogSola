@@ -8,11 +8,12 @@ import { useState } from "react";
 
 export default function InfraccionesTransitoPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const whatsappHref = "https://wa.me/54357315445933";
 
   const links = [
     { label: "Inicio", href: "/#inicio" },
+    { label: "Sobre mí", href: "/#about" },
     { label: "Servicios", href: "/#servicios" },
-    { label: "Testimonios", href: "/#testimonios" },
     { label: "Contacto", href: "/contacto" },
   ];
 
@@ -32,15 +33,25 @@ export default function InfraccionesTransitoPage() {
           </a>
 
           <nav className="hidden md:block">
-            <ul className="flex items-center gap-5 text-primary-foreground/90">
-              <li><a className="text-[16px] font-medium hover:text-primary-foreground hover:underline underline-offset-4 boutique-transition" href="/#inicio">Inicio</a></li>
-              <li className="text-primary-foreground/50">|</li>
-              <li><a className="text-[16px] font-medium hover:text-primary-foreground hover:underline underline-offset-4 boutique-transition" href="/#servicios">Servicios</a></li>
-              <li className="text-primary-foreground/50">|</li>
-              <li><a className="text-[16px] font-medium hover:text-primary-foreground hover:underline underline-offset-4 boutique-transition" href="/#testimonios">Testimonios</a></li>
-              <li className="text-primary-foreground/50">|</li>
-              <li><a className="text-[16px] font-medium hover:text-primary-foreground hover:underline underline-offset-4 boutique-transition" href="/contacto">Contacto</a></li>
-            </ul>
+            <div className="flex items-center gap-5 text-primary-foreground/90">
+              <ul className="flex items-center gap-5">
+                <li><a className="text-[16px] font-medium hover:text-primary-foreground hover:underline underline-offset-4 boutique-transition" href="/#inicio">Inicio</a></li>
+                <li className="text-primary-foreground/50">|</li>
+                <li><a className="text-[16px] font-medium hover:text-primary-foreground hover:underline underline-offset-4 boutique-transition" href="/#about">Sobre mí</a></li>
+                <li className="text-primary-foreground/50">|</li>
+                <li><a className="text-[16px] font-medium hover:text-primary-foreground hover:underline underline-offset-4 boutique-transition" href="/#servicios">Servicios</a></li>
+                <li className="text-primary-foreground/50">|</li>
+                <li><a className="text-[16px] font-medium hover:text-primary-foreground hover:underline underline-offset-4 boutique-transition" href="/contacto">Contacto</a></li>
+              </ul>
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex h-10 items-center rounded-full border border-primary-foreground/45 bg-primary-foreground/10 px-5 text-[14px] font-semibold tracking-tight text-primary-foreground boutique-transition hover:bg-primary-foreground/20"
+              >
+                Contactar ahora
+              </a>
+            </div>
           </nav>
 
           <button
@@ -77,6 +88,17 @@ export default function InfraccionesTransitoPage() {
                     {i < links.length - 1 && <div className="mx-4 h-px bg-primary/10" />}
                   </li>
                 ))}
+                <li className="px-3 pb-2 pt-3">
+                  <a
+                    href={whatsappHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex h-11 items-center justify-center rounded-full bg-primary px-4 text-[14px] font-semibold tracking-tight text-primary-foreground boutique-transition hover:bg-primary/90"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Contactar ahora
+                  </a>
+                </li>
               </ul>
             </div>
           </>
@@ -125,9 +147,7 @@ export default function InfraccionesTransitoPage() {
               <Button variant="plum" className="h-[46px] min-w-[164px] px-8 btn-text text-[17px] md:text-[18px]">
                 Contacta hoy mismo
               </Button>
-              <a href="/#contacto" className="text-[16px] font-semibold text-foreground boutique-transition hover:text-primary">
-                Boton CTA
-              </a>
+             
             </div>
           </div>
         </div>

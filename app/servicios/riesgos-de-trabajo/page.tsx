@@ -16,9 +16,9 @@ export default function RiesgosTrabajoPage() {
             <ul className="flex items-center gap-4 text-[28px] leading-none text-primary-foreground/90">
               <li><a className="text-[16px] font-medium hover:text-primary-foreground" href="/#inicio">Inicio</a></li>
               <li className="text-primary-foreground/45">|</li>
-              <li><a className="text-[16px] font-medium hover:text-primary-foreground" href="/#servicios">Servicios</a></li>
+              <li><a className="text-[16px] font-medium hover:text-primary-foreground" href="/#about">Sobre mí</a></li>
               <li className="text-primary-foreground/45">|</li>
-              <li><a className="text-[16px] font-medium hover:text-primary-foreground" href="/#testimonios">Testimonios</a></li>
+              <li><a className="text-[16px] font-medium hover:text-primary-foreground" href="/#servicios">Servicios</a></li>
               <li className="text-primary-foreground/45">|</li>
               <li><a className="text-[16px] font-medium hover:text-primary-foreground" href="/#contacto">Contacto</a></li>
             </ul>

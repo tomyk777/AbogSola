@@ -35,7 +35,7 @@ const Hero = () => {
       <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(241,236,232,0.76)_0%,rgba(241,236,232,0.2)_52%,rgba(241,236,232,0.08)_100%)] md:block" />
 
       <div className="relative z-10 section-frame min-h-[780px] py-20 md:py-24">
-        <div className="mx-auto max-w-[430px] translate-y-12 rounded-[6px] bg-[#efe8e3]/72 px-4 py-6 text-center pt-10 md:mx-0 md:translate-y-0 md:rounded-none md:bg-transparent md:px-0 md:py-0 md:pt-14 md:text-left">
+        <div className="mx-auto max-w-[430px] translate-y-12 rounded-[6px] bg-[#efe8e3]/72 px-4 py-6 text-center pt-10 md:mx-0 md:translate-y-0 md:rounded-none md:bg-transparent md:px-0 md:py-0 md:pt-14">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ const Hero = () => {
               src="/icons/LOGOS%20SOFIA%20SOLA_LOGOTIPO%20PRINCIPAL-1.svg"
               width={500}
               height={200}
-              className="mx-auto h-auto w-[238px] md:mx-0 md:w-[272px]"
+              className="mx-auto h-auto w-[256px] md:w-[290px]"
               alt="Sofia Sola Abogada"
               priority
             />
@@ -55,56 +55,74 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.45 }}
-            className="mx-auto max-w-[340px] font-serif-display text-[31px] italic leading-[0.95] text-primary/85 md:mx-0 md:text-primary/80"
+            className="mx-auto max-w-[370px] text-center font-serif-display text-[27px] italic leading-[1.1] text-primary/85 md:text-primary/80"
           >
-            Con nuestra experiencia y ética,
-            <br />
-            te acompañamos en cada momento
-            <br />
-            para lograr la mejor solución
-            <br />
-            a tu medida.
+            Con nuestra experiencia y ética, te acompañamos en todo momento para lograr la mejor solución a tu medida.
           </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.62 }}
+            className="mx-auto mt-11 flex w-full max-w-[340px] flex-col items-center justify-center gap-3 md:mt-12 md:flex-row"
+          >
+            <a
+              href={contactLinks.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-12 w-full items-center justify-center rounded-full bg-primary px-8 text-[15px] font-semibold tracking-tight text-primary-foreground boutique-transition hover:bg-primary/90 md:w-auto"
+            >
+              Contactar ahora
+            </a>
+            <a
+              href="/#servicios"
+              className="inline-flex h-12 w-full items-center justify-center rounded-full border border-primary/25 bg-[#efe8e3]/85 px-8 text-[15px] font-semibold tracking-tight text-primary boutique-transition hover:border-primary/45 md:w-auto"
+            >
+              Ver servicios
+            </a>
+          </motion.div>
         </div>
 
         <motion.div
           initial={{ y: 40, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.85, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="absolute right-12 top-[104px] z-20 hidden w-[278px] border border-primary/10 bg-[#efe8e3]/95 p-7 md:top-[118px] md:block md:w-[306px]"
+          className="absolute right-8 top-[96px] z-20 hidden min-h-[430px] w-[340px] border border-primary/10 bg-[#efe8e3]/95 p-8 md:top-[108px] md:block md:w-[390px] md:p-10"
         >
-          <h3 className="font-serif-display text-[33px] italic text-primary">¿Hablamos?</h3>
-          <div className="my-4 h-px w-[92px] bg-primary/35" />
-          <div className="space-y-2 text-[12.6px] leading-tight text-primary/80">
-            <p>
-              <a href={contactLinks.website} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
-                abogadasofiasola.com
-              </a>
-            </p>
-            <p>
-              <a href={contactLinks.phone} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
-                (03573) 15445933
-              </a>
-            </p>
-            <p>
-              <a href={contactLinks.email} className="hover:text-primary hover:underline boutique-transition">
-                abogadasofiasola@gmail.com
-              </a>
-            </p>
-            <p>
-              <a href={contactLinks.instagram} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
-                @abogadasofiasola
+          <div className="mx-auto flex w-full max-w-[255px] flex-col justify-center md:max-w-[280px]">
+            <h3 className="font-serif-display text-[33px] italic leading-none text-primary">¿Hablamos?</h3>
+            <div className="my-5 h-px w-[148px] bg-primary/35" />
+            <div className="space-y-2.5 text-[12.6px] leading-tight text-primary/80">
+              <p>
+                <a href={contactLinks.website} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
+                  abogadasofiasola.com
+                </a>
+              </p>
+              <p>
+                <a href={contactLinks.phone} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
+                  (03573) 15445933
+                </a>
+              </p>
+              <p>
+                <a href={contactLinks.email} className="hover:text-primary hover:underline boutique-transition">
+                  abogadasofiasola@gmail.com
+                </a>
+              </p>
+              <p>
+                <a href={contactLinks.instagram} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
+                  @abogadasofiasola
+                </a>
+              </p>
+            </div>
+            <p className="mt-12 font-serif-display text-[31px] italic leading-none text-primary/75">Me encontrarás en...</p>
+            <div className="my-5 h-px w-[148px] bg-primary/35" />
+            <p className="mt-1 text-[12.6px] leading-tight text-primary/80">
+              <a href={contactLinks.location} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
+                Hipolito Yrigoyen esq. Salta,
+                <br />
+                Villa del Rosario, Córdoba.
               </a>
             </p>
           </div>
-          <p className="mt-8 font-serif-display text-[31px] italic leading-none text-primary/75">Me encontrarás en...</p>
-          <p className="mt-4 text-[12.6px] leading-tight text-primary/80">
-            <a href={contactLinks.location} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
-              Hipolito Yrigoyen esq. Salta,
-              <br />
-              Villa del Rosario, Córdoba.
-            </a>
-          </p>
         </motion.div>
       </div>
 

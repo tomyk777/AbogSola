@@ -6,6 +6,7 @@ import Image from "next/image";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const whatsappHref = "https://wa.me/54357315445933";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -15,8 +16,8 @@ const Navbar = () => {
 
   const links = [
     { label: "Inicio", href: "/#inicio" },
+    { label: "Sobre mí", href: "/#about" },
     { label: "Servicios", href: "/#servicios" },
-    { label: "Testimonios", href: "/#testimonios" },
     { label: "Contacto", href: "/contacto" },
   ];
 
@@ -59,7 +60,8 @@ const Navbar = () => {
             )}
           </svg>
         </button>
-        <ul className="hidden md:flex items-center gap-5">
+        <div className="hidden md:flex items-center gap-5">
+          <ul className="flex items-center gap-5">
           {links.map(({ label, href }, i) => (
             <li key={label} className="flex items-center gap-4">
               <a
@@ -77,7 +79,20 @@ const Navbar = () => {
               )}
             </li>
           ))}
-        </ul>
+          </ul>
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noreferrer"
+            className={`inline-flex h-10 items-center rounded-full px-5 text-[14px] font-semibold tracking-tight boutique-transition ${
+              scrolled
+                ? "border border-primary-foreground/45 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
+                : "border border-primary/25 bg-warm-white/90 text-primary hover:border-primary/45"
+            }`}
+          >
+            Contactar ahora
+          </a>
+        </div>
         {isOpen && (
           <>
             <button
@@ -100,6 +115,17 @@ const Navbar = () => {
                     {i < links.length - 1 && <div className="mx-4 h-px bg-primary/10" />}
                   </li>
                 ))}
+                <li className="px-3 pb-2 pt-3">
+                  <a
+                    href={whatsappHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex h-11 items-center justify-center rounded-full bg-primary px-4 text-[14px] font-semibold tracking-tight text-primary-foreground boutique-transition hover:bg-primary/90"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Contactar ahora
+                  </a>
+                </li>
               </ul>
             </div>
           </>
