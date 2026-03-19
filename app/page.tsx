@@ -34,11 +34,11 @@ export const metadata: Metadata = {
       "Asesoramiento legal en Córdoba en laboral, familia, sucesiones y multas de tránsito. Atención personalizada y respuesta rápida. ",
     type: "website",
     locale: "es_AR",
-    url: "https://abogadasofiasola.com/",
+    url: "https://abogadasofiasola.vercel.app/",
     siteName: "Sofia Sola | Abogada",
     images: [
       {
-        url: "https://abogadasofiasola.com/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
+        url: "https://abogadasofiasola.vercel.app/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
         width: 1200,
         height: 630,
         alt: "Simbolo S de Sofia Sola en violeta",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     description:
       "Asesoramiento legal en Córdoba en laboral, familia, sucesiones y multas de tránsito. Atención personalizada y respuesta rápida. ",
     images: [
-      "https://abogadasofiasola.com/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
+      "https://abogadasofiasola.vercel.app/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
     ],
   },
   robots: {

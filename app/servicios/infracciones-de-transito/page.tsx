@@ -33,11 +33,11 @@ export const metadata: Metadata = {
       "Asesoramiento para descargos, reducción o eliminación de multas de tránsito en Córdoba. Consultá tu caso.",
     type: "website",
     locale: "es_AR",
-    url: "https://abogadasofiasola.com/servicios/infracciones-de-transito",
+    url: "https://abogadasofiasola.vercel.app/servicios/infracciones-de-transito",
     siteName: "Sofia Sola | Abogada",
     images: [
       {
-        url: "https://abogadasofiasola.com/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
+        url: "https://abogadasofiasola.vercel.app/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
         width: 1200,
         height: 630,
         alt: "Simbolo S de Sofia Sola en violeta",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Resolve tus multas | Sofia Sola Abogada",
     description: "Asesoramiento para descargos, reducción o eliminación de multas de tránsito en Córdoba. Consultá tu caso.",
     images: [
-      "https://abogadasofiasola.com/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
+      "https://abogadasofiasola.vercel.app/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
     ],
   },
 };
