@@ -37,7 +37,7 @@ const About = () => {
             ¡Hola! Soy Sofía Sola
           </h2>
           <div className="space-y-4 text-[16px] leading-[1.35] text-secondary-foreground/85 md:text-[17px]">
-            <p>Abogada especializada en Laboral, Familia y Reales.</p>
+            <p>Abogada especializada en Laboral, ART, Sucesiones y Multas de Transito.</p>
             <p>
               Mi objetivo es acompañarte y brindarte el asesoramiento integral que estés necesitando.
             </p>

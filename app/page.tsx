@@ -9,12 +9,12 @@ import CTASection from "@/components/CTASection";
 export const metadata: Metadata = {
   title: "Sofia Sola | Abogada en Cordoba",
   description:
-    "Sofía Sola, abogada en Córdoba. Asesoramiento en derecho laboral, sucesiones, familia, usucapión y multas de tránsito. Consultas personalizadas y respuesta rápida. En cada etapa legal, el acompañamiento correcto hace la diferencia. Cada caso es único, por eso mi compromiso es escucharte con atención y brindarte soluciones claras.",
+    "Sofía Sola, abogada en Córdoba. Asesoramiento en derecho laboral, sucesiones, ART, usucapión y multas de tránsito. Consultas personalizadas y respuesta rápida. En cada etapa legal, el acompañamiento correcto hace la diferencia. Cada caso es único, por eso mi compromiso es escucharte con atención y brindarte soluciones claras.",
   keywords: [
     "abogada en Córdoba",
   "abogado laboral Córdoba",
   "abogada sucesiones Córdoba",
-  "abogada familia Córdoba",
+  "abogada multas Córdoba",
   "reclamo ART Córdoba",
   "accidente laboral abogado",
   "multas de tránsito Córdoba",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sofia Sola | Abogada en Cordoba",
     description:
-      "Asesoramiento legal en Córdoba en laboral, familia, sucesiones y multas de tránsito. Atención personalizada y respuesta rápida. ",
+      "Asesoramiento legal en Córdoba en laboral, ART, sucesiones y multas de tránsito. Atención personalizada y respuesta rápida. ",
     type: "website",
     locale: "es_AR",
     url: "https://abogadasofiasola.com/",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sofia Sola | Abogada en Cordoba",
     description:
-      "Asesoramiento legal en Córdoba en laboral, familia, sucesiones y multas de tránsito. Atención personalizada y respuesta rápida. ",
+      "Asesoramiento legal en Córdoba en laboral, ART, sucesiones y multas de tránsito. Atención personalizada y respuesta rápida. ",
     images: [
       "https://abogadasofiasola.com/og-image.png",
     ],
