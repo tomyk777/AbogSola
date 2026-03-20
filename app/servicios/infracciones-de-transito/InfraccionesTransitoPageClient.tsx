@@ -114,7 +114,15 @@ export default function InfraccionesTransitoPageClient() {
               </h1>
 
               <div className="mb-10 grid gap-8 md:mb-12 md:grid-cols-[210px_1fr] md:items-start md:gap-10">
-                <div className="flex h-[210px] w-full items-center justify-center bg-secondary px-6 py-6" />
+                <div className="relative h-[210px] w-full overflow-hidden">
+                  <Image
+                    src="/multas.jpeg"
+                    alt="Infracciones de transito"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 768px) 210px, 100vw"
+                  />
+                </div>
 
                 <div className="space-y-5 text-[16px] leading-[1.28] text-foreground">
                   <p className="font-semibold">

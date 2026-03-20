@@ -68,11 +68,11 @@ const homeStructuredData = {
   url: "https://abogadasofiasola.com/",
   image: "https://abogadasofiasola.com/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
   telephone: "+54 3573 15445933",
-  email: "abogadasofiasola@gmail.com",
+  email: "consultas@abogadasofiasola.com",
   areaServed: ["Cordoba", "Argentina"],
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Hipolito Yrigoyen esq. Salta",
+    streetAddress: "Obispo Ferreyra 815",
     addressLocality: "Villa del Rosario",
     addressRegion: "Cordoba",
     addressCountry: "AR",

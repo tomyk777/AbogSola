@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 const Footer = () => {
   const contactLinks = {
     phone: "https://wa.me/54357315445933",
-    email: "mailto:abogadasofiasola@gmail.com",
+    email: "mailto:consultas@abogadasofiasola.com",
     instagram: "https://www.instagram.com/abogadasofiasola",
     instagramMultas: "https://www.instagram.com/resolvetusmultas_",
-    location: "https://www.google.com/maps/search/?api=1&query=Hipolito+Yrigoyen+esq.+Salta,+Villa+del+Rosario,+Cordoba",
+    location: "https://www.google.com/maps/search/?api=1&query=Obispo+Ferreyra+815,+Villa+del+Rosario,+Pcia.+de+Cordoba",
   };
 
   return (
@@ -58,7 +58,7 @@ const Footer = () => {
               <p>
                 <span className="font-semibold text-primary">Email:</span>{" "}
                 <a href={contactLinks.email} className="underline-offset-2 hover:text-primary hover:underline boutique-transition">
-                  abogadasofiasola@gmail.com
+                  consultas@abogadasofiasola.com
                 </a>
               </p>
               <p>
@@ -76,7 +76,7 @@ const Footer = () => {
               <p>
                 <span className="font-semibold text-primary">Dirección:</span>{" "}
                 <a href={contactLinks.location} target="_blank" rel="noreferrer" className="underline-offset-2 hover:text-primary hover:underline boutique-transition">
-                  Hipolito Yrigoyen esq. Salta, Villa del Rosario, Córdoba.
+                  Obispo Ferreyra 815, Villa del Rosario, Pcia. de Cordoba
                 </a>
               </p>
 
@@ -89,7 +89,7 @@ const Footer = () => {
       <div className="bg-primary px-3 py-4 md:px-4">
         <div className="section-frame">
           <p className="text-center text-[11px] font-semibold tracking-tight text-primary-foreground/80 md:text-[12px]">
-            Copyright © 2025 Sofía Sola | by sofiasola | Política de privacidad - Política de cookies - Aviso legal
+            Copyright © 2025 Sofía Sola | Todos los derechos reservados.
           </p>
         </div>
       </div>

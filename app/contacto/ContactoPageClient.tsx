@@ -17,9 +17,10 @@ export default function ContactoPageClient() {
     website: "https://abogadasofiasola.com",
     phone: "https://wa.me/54357315445933",
     whatsapp: "https://wa.me/54357315445933",
-    email: "mailto:abogadasofiasola@gmail.com",
+    email: "mailto:consultas@abogadasofiasola.com",
     instagram: "https://www.instagram.com/abogadasofiasola",
-    location: "https://www.google.com/maps/search/?api=1&query=Hipolito+Yrigoyen+esq.+Salta,+Villa+del+Rosario,+Cordoba",
+    instagramMultas: "https://www.instagram.com/resolvetusmultas_",
+    location: "https://www.google.com/maps/search/?api=1&query=Obispo+Ferreyra+815,+Villa+del+Rosario,+Pcia.+de+Cordoba",
   };
 
   const links = [
@@ -172,12 +173,17 @@ export default function ContactoPageClient() {
                     </p>
                     <p className="mb-2">
                       <a href={contactLinks.email} className="hover:text-primary hover:underline boutique-transition">
-                        abogadasofiasola@gmail.com
+                        consultas@abogadasofiasola.com
+                      </a>
+                    </p>
+                    <p className="mb-2">
+                      <a href={contactLinks.instagram} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
+                        @abogadasofiasola
                       </a>
                     </p>
                     <p>
-                      <a href={contactLinks.instagram} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
-                        @abogadasofiasola
+                      <a href={contactLinks.instagramMultas} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
+                        @resolvetusmultas_
                       </a>
                     </p>
                   </div>
@@ -186,7 +192,7 @@ export default function ContactoPageClient() {
                     <div className="mb-4 mt-2 h-px w-[166px] bg-primary/45" />
                     <p>
                       <a href={contactLinks.location} target="_blank" rel="noreferrer" className="hover:text-primary hover:underline boutique-transition">
-                        Hipolito Irigoyen esq. Salta, Villa del Rosario, Córdoba.
+                        Obispo Ferreyra 815, Villa del Rosario, Pcia. de Cordoba
                       </a>
                     </p>
                     <Image
