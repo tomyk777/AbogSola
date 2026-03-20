@@ -14,6 +14,7 @@ const About = () => {
             height={1400}
             className="h-[500px] w-full object-contain"
             alt="Abogada"
+            sizes="(max-width: 767px) 82vw, 40vw"
           />
         </div>
 
@@ -30,6 +31,7 @@ const About = () => {
             height={272}
             className="mb-6 h-auto w-[58px]"
             alt="Icono de mazo"
+            sizes="58px"
           />
           <h2 className="mb-5 font-sans text-[39px] font-semibold not-italic leading-[1.02] text-secondary-foreground md:text-[44px]">
             ¡Hola! Soy Sofía Sola

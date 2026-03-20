@@ -23,6 +23,7 @@ const Hero = () => {
         className="absolute inset-0 h-full w-full object-cover object-center opacity-40 md:hidden"
         alt="Estudio juridico"
         priority
+        sizes="(max-width: 767px) 100vw, 1px"
       />
       <Image
         src="/Fotos-landing/HERO-real2.png"
@@ -30,7 +31,7 @@ const Hero = () => {
         height={1200}
         className="absolute inset-0 hidden h-full w-full object-cover object-center md:block"
         alt="Estudio juridico"
-        priority
+        sizes="(max-width: 767px) 1px, 100vw"
       />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(241,236,232,0.9)_0%,rgba(241,236,232,0.62)_48%,rgba(241,236,232,0.38)_100%)] md:hidden" />
       <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(241,236,232,0.76)_0%,rgba(241,236,232,0.2)_52%,rgba(241,236,232,0.08)_100%)] md:block" />
@@ -49,7 +50,7 @@ const Hero = () => {
               height={200}
               className="mx-auto h-auto w-[256px] md:w-[290px]"
               alt="Sofia Sola Abogada"
-              priority
+              sizes="(max-width: 767px) 256px, 290px"
             />
           </motion.div>
           <motion.p
@@ -145,6 +146,7 @@ const Hero = () => {
                 className="h-auto w-[24px] opacity-90 md:w-[30px] md:opacity-100"
                 alt=""
                 aria-hidden="true"
+                sizes="(max-width: 767px) 24px, 30px"
               />
               <p className="text-center text-[12px] font-semibold tracking-[0.11em] text-primary/90 md:text-[14px] md:text-primary">
                 CORDOBA  |  BUENOS AIRES  |  SANTA FE  |  ENTRE RIOS  |  MISIONES
@@ -156,6 +158,7 @@ const Hero = () => {
                 className="h-auto w-[24px] opacity-90 md:w-[30px] md:opacity-100"
                 alt=""
                 aria-hidden="true"
+                sizes="(max-width: 767px) 24px, 30px"
               />
             </div>
           </motion.div>

@@ -23,6 +23,7 @@ const Footer = () => {
                 height={261}
                 className="h-auto w-[72px]"
                 alt="Monograma Sofia Sola"
+                sizes="72px"
               />
               <p className="font-serif-display text-[24px] italic leading-[0.92] text-primary md:text-[26px]">
                 Tu confianza
@@ -102,6 +103,7 @@ const Footer = () => {
             height={200}
             className="mx-auto h-auto w-[220px] md:w-[236px]"
             alt="Sofia Sola Abogada"
+            sizes="(max-width: 767px) 220px, 236px"
           />
         </div>
       </div>

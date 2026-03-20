@@ -39,7 +39,7 @@ const Navbar = () => {
             height={168}
             className="h-auto w-[146px]"
             alt="Sofia Sola Abogada"
-            priority
+            sizes="146px"
           />
         </a>
         <button

@@ -24,6 +24,7 @@ const WhyChooseUs = () => {
               height={350}
               className="absolute right-1 top-0 h-auto w-[86px]"
               alt="Icono de mazo"
+              sizes="86px"
             />
             <h2 className="mb-7 font-sans text-[39px] font-semibold not-italic leading-[1.05] text-primary md:text-[45px]">
               ¿Por qué elegirnos?
@@ -52,6 +53,7 @@ const WhyChooseUs = () => {
               height={1300}
               className="h-full w-full object-cover grayscale-[10%]"
               alt="Estudio juridico"
+              sizes="(max-width: 767px) 92vw, 46vw"
             />
           </div>
         </div>

@@ -14,6 +14,7 @@ const ServicesIntro = () => {
             height={1100}
             className="h-full w-full max-h-[480px] object-cover"
             alt="Estudio juridico"
+            sizes="(max-width: 767px) 82vw, 34vw"
           />
         </div>
 
@@ -30,6 +31,7 @@ const ServicesIntro = () => {
             height={261}
             className="absolute right-6 top-6 h-auto w-[76px]"
             alt="Monograma Sofia Sola"
+            sizes="76px"
           />
           <h2 className="mb-6 font-serif-display text-[54px] italic leading-[0.95] text-secondary-foreground md:text-[58px]">
             Servicios
