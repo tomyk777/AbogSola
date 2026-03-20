@@ -1,9 +1,26 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, Poppins } from "next/font/google";
 import Providers from "@/components/Providers";
 import LayoutShell from "@/components/LayoutShell";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import "@/index.css";
 import "@/App.css";
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-serif-display",
+  display: "swap",
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-sans-body",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Sofia Sola | Abogada",
@@ -49,7 +66,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body>
+      <body className={`${poppins.variable} ${cormorantGaramond.variable}`}>
         <script
           type="application/ld+json"
           suppressHydrationWarning
