@@ -31,11 +31,11 @@ export const metadata: Metadata = {
       "Realizá tu consulta legal con Sofía Sola. Atención por WhatsApp y respuesta rápida en Córdoba.",
     type: "website",
     locale: "es_AR",
-    url: "https://abogadasofiasola.vercel.app/contacto",
+    url: "https://abogadasofiasola.com/contacto",
     siteName: "Sofia Sola | Abogada",
     images: [
       {
-        url: "https://abogadasofiasola.vercel.app/og-image.png",
+        url: "https://abogadasofiasola.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Simbolo S de Sofia Sola en violeta",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Contacto | Sofia Sola Abogada en Cordoba",
     description: "Canales de contacto y consulta legal con Sofia Sola.",
     images: [
-      "https://abogadasofiasola.vercel.app/og-image.png",
+      "https://abogadasofiasola.com/og-image.png",
     ],
   },
 };
