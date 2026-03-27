@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   const contactLinks = {
@@ -90,7 +89,16 @@ const Footer = () => {
       <div className="bg-primary px-3 py-4 md:px-4">
         <div className="section-frame">
           <p className="text-center text-[11px] font-semibold tracking-tight text-primary-foreground/80 md:text-[12px]">
-            Copyright © 2025 Sofía Sola | Todos los derechos reservados.
+            Copyright © 2025 Sofía Sola | Todos los derechos reservados. | Desarrollado por{" "}
+            <a
+              href="https://www.linkedin.com/in/tom%C3%A1s-kreczmer-b5682a37a/"
+              target="_blank"
+              rel="noreferrer"
+              className="underline-offset-2 boutique-transition hover:text-primary-foreground hover:underline"
+            >
+              Tomás Kreczmer
+            </a>
+            .
           </p>
         </div>
       </div>
