@@ -35,21 +35,6 @@ export default function InfraccionesTransitoPageClient() {
     },
   ];
 
-  const successCases = [
-    {
-      name: "Eduardo",
-      text: "Eduardo fue a renovar la licencia de conducir y en el municipio le avisaron que constaban con su DNI varias multas y que hasta que no las pague, no le podían emitir la renovación. En vez de pagarlo, nos escribió y se las resolvimos por la mitad de lo que el municipio le estaba pidiendo..",
-    },
-    {
-      name: "Norma",
-      text: "Norma vendió su vehículo y cuando fue  a hacer la transferencia le informaron que el auto tenía $200.000 de multas. El comprador no quería comprar por la  deuda. Nos contactó y se las resolvimos por la mitad. A la semana volvieron al Registro y las multas no estaban más.",
-    },
-    {
-      name: "Juan",
-      text: "Juan recibió una carta informándole una multa en Bs. As. por $100.000. Nos escribió, pedió que se las resolvamos y terminó pagando la mitad sin moverse de su casa.",
-    },
-  ];
-
   const reviews = [
     {
       author: "Lorena",
@@ -211,7 +196,7 @@ export default function InfraccionesTransitoPageClient() {
           </div>
         </section>
 
-        <section className="w-full bg-secondary py-14 text-primary-foreground md:py-24">
+        <section className="w-full bg-primary py-14 text-primary-foreground md:py-24">
           <div className="section-frame px-4 md:px-10">
             <div className="mx-auto max-w-[1200px]">
               <h2 className="mb-8 text-center font-serif-display text-[38px] italic leading-[1] text-primary-foreground md:mb-11 md:text-[54px]">
@@ -230,34 +215,6 @@ export default function InfraccionesTransitoPageClient() {
                     <h3 className="mb-3 font-sans-body text-[27px] font-semibold not-italic leading-[1.05] text-primary-foreground">{item.title}</h3>
                     <p className="text-[16px] leading-[1.28] text-primary-foreground/88">{item.description}</p>
                     
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="w-full bg-[#f0ebe3] py-14 md:py-24">
-          <div className="section-frame px-4 md:px-10">
-            <div className="mx-auto max-w-[1200px]">
-              <h2 className="mb-8 text-center font-serif-display text-[38px] italic leading-[1] text-foreground md:mb-11 md:text-[54px]">
-                Casos de Exito
-              </h2>
-
-              <div className="grid gap-6 md:grid-cols-3 md:gap-8">
-                {successCases.map((item) => (
-                  <article key={item.name} className="relative border border-primary/35 bg-[#eee7dc] p-6 boutique-transition hover:-translate-y-1 hover:border-primary/60 hover:bg-[#f3ece1] hover:shadow-[0_18px_32px_-22px_rgba(81,33,61,0.45)] md:p-7">
-                    <div className="absolute left-0 top-0 h-[7px] w-full bg-primary" />
-                    <Image
-                      src="/icons/LOGOS%20SOFIA%20SOLA_MAZO-55.svg"
-                      width={180}
-                      height={180}
-                      className="absolute right-4 top-4 h-auto w-[28px] opacity-75"
-                      alt="Icono de mazo"
-                      sizes="28px"
-                    />
-                    <p className="mb-4 pt-3 font-sans-body text-[30px] font-semibold not-italic leading-none text-primary">{item.name}</p>
-                    <p className="text-[16px] leading-[1.28] text-foreground/85">{item.text}</p>
                   </article>
                 ))}
               </div>
