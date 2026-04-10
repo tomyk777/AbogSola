@@ -6,7 +6,7 @@ import Image from "next/image";
 import { ArrowRight, Quote, XCircle } from "lucide-react";
 
 export default function InfraccionesTransitoPageClient() {
-  const whatsappHref = "https://wa.me/54357315445933?text=Hola%20Sofia%2C%20quiero%20hacer%20una%20consulta%20por%20infracciones%20de%20transito.";
+  const whatsappHref = "https://wa.me/543573445933?text=Hola%20Sofia%2C%20quiero%20hacer%20una%20consulta%20por%20infracciones%20de%20transito.";
 
   const serviceSteps = [
     {

@@ -15,8 +15,8 @@ export default function ContactoPageClient() {
 
   const contactLinks = {
     website: "https://abogadasofiasola.com",
-    phone: "https://wa.me/54357315445933",
-    whatsapp: "https://wa.me/54357315445933",
+    phone: "https://wa.me/543573445933",
+    whatsapp: "https://wa.me/543573445933",
     email: "mailto:consultas@abogadasofiasola.com",
     instagram: "https://www.instagram.com/abogadasofiasola",
     instagramMultas: "https://www.instagram.com/resolvetusmultas_",
