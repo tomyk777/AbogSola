@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero = () => {
   const contactLinks = {
-    website: "https://abogadasofiasola.com",
+    website: "https://abogadasofiasola.vercel.app",
     phone: "https://wa.me/543573445933",
     whatsapp: "https://wa.me/543573445933",
     email: "mailto:consultas@abogadasofiasola.com",

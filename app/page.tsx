@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   "abogada Buenos Aires"
   ],
   alternates: {
-    canonical: "https://abogadasofiasola.com/",
+    canonical: "https://abogadasofiasola.vercel.app/",
   },
   openGraph: {
     title: "Sofia Sola | Abogada en Cordoba",
@@ -34,11 +34,11 @@ export const metadata: Metadata = {
       "Asesoramiento legal en Córdoba en laboral, ART, sucesiones y multas de tránsito. Atención personalizada y respuesta rápida. ",
     type: "website",
     locale: "es_AR",
-    url: "https://abogadasofiasola.com/",
+    url: "https://abogadasofiasola.vercel.app/",
     siteName: "Sofia Sola | Abogada",
     images: [
       {
-        url: "https://abogadasofiasola.com/og-image.png",
+        url: "https://abogadasofiasola.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Simbolo S de Sofia Sola en violeta",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     description:
       "Asesoramiento legal en Córdoba en laboral, ART, sucesiones y multas de tránsito. Atención personalizada y respuesta rápida. ",
     images: [
-      "https://abogadasofiasola.com/og-image.png",
+      "https://abogadasofiasola.vercel.app/og-image.png",
     ],
   },
   robots: {
@@ -63,10 +63,10 @@ export const metadata: Metadata = {
 const homeStructuredData = {
   "@context": "https://schema.org",
   "@type": "LegalService",
-  "@id": "https://abogadasofiasola.com/#legalservice",
+  "@id": "https://abogadasofiasola.vercel.app/#legalservice",
   name: "Sofia Sola Abogada",
-  url: "https://abogadasofiasola.com/",
-  image: "https://abogadasofiasola.com/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
+  url: "https://abogadasofiasola.vercel.app/",
+  image: "https://abogadasofiasola.vercel.app/icons/LOGOS%20SOFIA%20SOLA_SIMBOLO%20S-46.svg",
   telephone: "+54 3573 15445933",
   email: "consultas@abogadasofiasola.com",
   areaServed: ["Cordoba", "Argentina"],

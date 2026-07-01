@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "estudio jurídico contacto Córdoba"
   ],
   alternates: {
-    canonical: "https://abogadasofiasola.com/contacto",
+    canonical: "https://abogadasofiasola.vercel.app/contacto",
   },
   openGraph: {
     title: "Contacto | Sofia Sola Abogada en Cordoba",
@@ -31,11 +31,11 @@ export const metadata: Metadata = {
       "Realizá tu consulta legal con Sofía Sola. Atención por WhatsApp y respuesta rápida en Córdoba.",
     type: "website",
     locale: "es_AR",
-    url: "https://abogadasofiasola.com/contacto",
+    url: "https://abogadasofiasola.vercel.app/contacto",
     siteName: "Sofia Sola | Abogada",
     images: [
       {
-        url: "https://abogadasofiasola.com/og-image.png",
+        url: "https://abogadasofiasola.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Simbolo S de Sofia Sola en violeta",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Contacto | Sofia Sola Abogada en Cordoba",
     description: "Canales de contacto y consulta legal con Sofia Sola.",
     images: [
-      "https://abogadasofiasola.com/og-image.png",
+      "https://abogadasofiasola.vercel.app/og-image.png",
     ],
   },
 };

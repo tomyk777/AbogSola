@@ -32,9 +32,9 @@ const siteStructuredData = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://abogadasofiasola.com/#organization",
+      "@id": "https://abogadasofiasola.vercel.app/#organization",
       name: "Sofia Sola Abogada",
-      url: "https://abogadasofiasola.com/",
+      url: "https://abogadasofiasola.vercel.app/",
       telephone: "+54 3573 15445933",
       email: "consultas@abogadasofiasola.com",
       sameAs: ["https://www.instagram.com/abogadasofiasola/"],
@@ -48,12 +48,12 @@ const siteStructuredData = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://abogadasofiasola.com/#website",
-      url: "https://abogadasofiasola.com/",
+      "@id": "https://abogadasofiasola.vercel.app/#website",
+      url: "https://abogadasofiasola.vercel.app/",
       name: "Sofia Sola | Abogada",
       inLanguage: "es-AR",
       publisher: {
-        "@id": "https://abogadasofiasola.com/#organization",
+        "@id": "https://abogadasofiasola.vercel.app/#organization",
       },
     },
   ],
